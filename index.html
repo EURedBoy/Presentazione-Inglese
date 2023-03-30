@@ -12,43 +12,93 @@
 </head>
 <body>
 
-    <section class="hidden title">
+    <section class="hidden h_left title">
         <h1>Presentazione Inglese</h1>
     </section>
 
+    <section class="popup star-top">
+        <img class="close" src="src/close.svg" alt="close">
+        <h1>Star Topology</h1>
+        <img src="src/star-topology.png" alt="star topology">
+        <div class="wrapper">
+            <p>
+                Pros<br>
+                - Ciao<br>
+                - Test
+            </p>
+            <p>
+                Cons<br>
+                - Ciao1<br>
+                - Test1
+            </p>
+        </div>
+    </section>
 
-    <section class="hidden internet">
-        <h2>The Internet</h2>
+
+    <section class="internet">
+        <h2 class="hidden h_left">The Internet</h2>
         <div class="wrapper">
             <div class="left">
+                <div class="arpanet">
+                    <h2>Arpanet</h2>
+                    <div class="wrapper vedi">
+                        <img src="src/big_arpanet.png" alt="big arpanet">
+                        <p>It was initially created by US government during the cold war, 
+                            it was used to communicate to various sites without the needs of a direct connection.
+                            At the end of the cold war the project ARPA was closed and became MILNET.
+                            MILNET was slowly abandoned and in 1990 it was sold to an university where it became the internet that we know.
+                        </p>
+                    </div>
+                </div>
+                <div class="tcp">
+                    <h2>Tcp/Ip</h2>
+                    <div class="wrapper">
+                        <img src="src/tcp-ip_model.png" alt="big arpanet">
+                        <p>It was initially created by US government during the cold war,
+                            it was used to communicate to various sites without the needs of a direct connection.
+                            At the end of the cold war the project ARPA was closed and became MILNET.
+                            MILNET was slowly abandoned and in 1990 it was sold to an university where it became the internet that we know.
+                        </p>
+                    </div>
+                </div>
+                <div class="worldwide">
+                    <h2>World Wide Web</h2>
+                    <div class="wrapper">
+                        <img src="src/www_big.png" alt="big arpanet">
+                        <p>It was initially created by US government during the cold war,
+                            it was used to communicate to various sites without the needs of a direct connection.
+                            At the end of the cold war the project ARPA was closed and became MILNET.
+                            MILNET was slowly abandoned and in 1990 it was sold to an university where it became the internet that we know.
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="right">
-                <div class="top">
-                    <img src="src/arpanet.png" class="hidden" alt="arpanet">
-                    <img src="src/arpanet.png" class="hidden" alt="arpanet">
-                    <img src="src/arpanet.png" class="hidden" alt="arpanet">
+                <div class="image">
+                    <img src="src/arpanet.png" class="hidden h_right" alt="arpanet" onclick="openPar('arpanet')">
+                    <img src="src/tcp-ip.webp" class="hidden h_right" alt="arpanet" onclick="openPar('tcp')">
+                    <img src="src/worldwideweb.webp" class="hidden h_right" alt="arpanet" onclick="openPar('worldwide')">
                 </div>
-                <div class="timebar"></div>
-                <div class="bottom">
-                    <p class="hidden">1966</p>
-                    <p class="hidden">1966</p>
-                    <p class="hidden">1966</p>
+                <div class="timebar hidden h_right"></div>
+                <div class="date">
+                    <p class="hidden h_right">1966-1974</p>
+                    <p class="hidden h_right">1974-1981</p>
+                    <p class="hidden h_right">1981-2023</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="two hidden">
-        <h2>Section 3 Title</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Aliquam animi dolorum harum ex accusamus recusandae nemo,
-            iusto est aliquid, iste molestias consequatur accusantium laboriosam.
-            Aliquid assumenda recusandae et deleniti rerum.
-        </p>
+    <section class="topologies hidden h_left">
+        <h2>Lan Topologies</h2>
+        <div class="wrapper">
+            <div class="star" onclick="openPopup('star-top')">
+                <!-- immagine -->
+            </div>
+        </div>
     </section>
 
-    <section class="hidden">
+    <section class="hidden h_left">
         <h2>Section 4 Title</h2>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
