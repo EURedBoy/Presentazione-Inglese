@@ -19,19 +19,93 @@
     <section class="popup star-top">
         <img class="close" src="src/close.svg" alt="close">
         <h1>Star Topology</h1>
-        <img src="src/star-topology.png" alt="star topology">
+        <img src="src/topology/star-topology.png" alt="topology">
         <div class="wrapper">
             <p>
                 Pros<br>
-                - Ciao<br>
-                - Test
+                - Very high speed<br>
+                - Highly scalable
             </p>
             <p>
                 Cons<br>
-                - Ciao1<br>
-                - Test1
+                - Central device dependency<br>
+                - It's very expensive
             </p>
         </div>
+    </section>
+
+    <section class="popup ring-top">
+        <img class="close" src="src/close.svg" alt="close">
+        <h1>Ring Topology</h1>
+        <img src="src/topology/ring_topology.png" alt="topology">
+        <div class="wrapper">
+            <p>
+                Pros<br>
+                - Higly scalable<br>
+                - High speed<br>
+                - Easy troubleshooting (where the pc stops working)
+            </p>
+            <p>
+                Cons<br>
+                - Expensive<br>
+                - Protection
+            </p>
+        </div>
+    </section>
+
+    <section class="popup bus-top">
+        <img class="close" src="src/close.svg" alt="close">
+        <h1>Bus Topology</h1>
+        <img src="src/topology/bus_topology.png" alt="topology">
+        <div class="wrapper">
+            <p>
+                Pros<br>
+                - Low cost<br>
+                - Easy to expand
+            </p>
+            <p>
+                Cons<br>
+                - Single point of faliure<br>
+                - Limited cable lenght
+            </p>
+        </div>
+    </section>
+
+    <section class="popup mesh-top">
+        <img class="close" src="src/close.svg" alt="close">
+        <h1>Mesh Topology</h1>
+        <img src="src/topology/mesh_topology.jpg" alt="topology">
+        <div class="wrapper">
+            <p>
+                Pros<br>
+                - High scalability<br>
+                - Speed and reliable
+            </p>
+            <p>
+                Cons<br>
+                - Initial setup very difficult<br>
+                - High cost
+            </p>
+        </div>
+    </section>
+
+    <section class="popup hub">
+        <img class="close" src="src/close.svg" alt="close">
+        <h1>Hub</h1>
+        <img src="src/devices/hub.jpg" alt="hub">
+        <p>Forward every data to every port</p>
+    </section>
+    <section class="popup switch">
+        <img class="close" src="src/close.svg" alt="close">
+        <h1>Switch</h1>
+        <img src="src/devices/switch.jpg" alt="switch">
+        <p>More intelligent than hubs, they can forward data only to the right port</p>
+    </section>
+    <section class="popup router">
+        <img class="close" src="src/close.svg" alt="close">
+        <h1>Router</h1>
+        <img src="src/devices/router.jpg" alt="router">
+        <p>Used to connect two or more different lan</p>
     </section>
 
 
@@ -54,10 +128,8 @@
                     <h2>Tcp/Ip</h2>
                     <div class="wrapper">
                         <img src="src/tcp-ip_model.png" alt="big arpanet">
-                        <p>It was initially created by US government during the cold war,
-                            it was used to communicate to various sites without the needs of a direct connection.
-                            At the end of the cold war the project ARPA was closed and became MILNET.
-                            MILNET was slowly abandoned and in 1990 it was sold to an university where it became the internet that we know.
+                        <p>The TCP/IP protocol was created in the 1974, this model made possible the
+                            communication between different networks around the world.
                         </p>
                     </div>
                 </div>
@@ -65,10 +137,8 @@
                     <h2>World Wide Web</h2>
                     <div class="wrapper">
                         <img src="src/www_big.png" alt="big arpanet">
-                        <p>It was initially created by US government during the cold war,
-                            it was used to communicate to various sites without the needs of a direct connection.
-                            At the end of the cold war the project ARPA was closed and became MILNET.
-                            MILNET was slowly abandoned and in 1990 it was sold to an university where it became the internet that we know.
+                        <p>In the 1991 the word wide web was introduced inside the network.
+                            With the www it was possible to include graphics, animations, video and sounds.
                         </p>
                     </div>
                 </div>
@@ -92,20 +162,71 @@
     <section class="topologies hidden h_left">
         <h2>Lan Topologies</h2>
         <div class="wrapper">
-            <div class="star" onclick="openPopup('star-top')">
-                <!-- immagine -->
+            <div class="topo star" onclick="openPopup('star-top')">
+                <img src="src/topology/star-topology.png" alt="star topology">
+                <p>Star Topology</p>
+            </div>
+            <div class="topo ring" onclick="openPopup('ring-top')">
+                <img src="src/topology/ring_topology.png" alt="ring topology">
+                <p>Ring Topology</p>
+            </div>
+            <div class="topo bus" onclick="openPopup('bus-top')">
+                <img src="src/topology/bus_topology.png" alt="bus topology">
+                <p>Bus Topology</p>
+            </div>
+            <div class="topo mesh" onclick="openPopup('mesh-top')">
+                <img src="src/topology/mesh_topology.jpg" alt="mesh topology">
+                <p>Mesh Topology</p>
             </div>
         </div>
     </section>
 
-    <section class="hidden h_left">
-        <h2>Section 4 Title</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Aliquam animi dolorum harum ex accusamus recusandae nemo,
-            iusto est aliquid, iste molestias consequatur accusantium laboriosam.
-            Aliquid assumenda recusandae et deleniti rerum.
-        </p>
+    <section class="devices hidden h_left">
+        <h2>Network Interfaces</h2>
+        <div class="wrapper">
+            <div class="device hub">
+                <img src="src/devices/hub.jpg" alt="hub device" onclick="openPopup('hub')">
+                <p>Hub</p>
+            </div>
+            <div class="device switch">
+                <img src="src/devices/switch.jpg" alt="switch device" onclick="openPopup('switch')">
+                <p>Switch</p>
+            </div>
+            <div class="device router">
+                <img src="src/devices/router.jpg" alt="router device" onclick="openPopup('router')">
+                <p>Router</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="fiber hidden h_left">
+        <h2>Fiber Cable</h2>
+        <div class="wrapper">
+            <img src="src/fiber.png" alt="fiber">
+            <p>
+                We use two different types of fiber cable: (singlemode, multimode).<br>
+                Each of them as Pros and Cons.
+            </p>
+            <img src="src/singlemode-multimode.jpg" alt="singlemode-multimode">
+        </div>
+    </section>
+
+    <section class="url hidden h_left">
+        <h2>Url</h2>
+        <div class="wrapper">
+            <p><span class="protocol">https</span>://
+                <span class="domain">www.vincenzov.net</span>
+                <span class="path">/tutorial/RaspberryPi/helloREALworld-sh.html</span>
+                <span class="query">?name="marco"&surname="rossi"</span>
+            </p>
+        </div>
+    </section>
+
+    <section class="darkweb hidden h_left">
+        <h2>DarkWeb</h2>
+        <div class="wrapper">
+            <img src="src/darkweb.jpg" alt="darkweb">
+        </div>
     </section>
     
 </body>

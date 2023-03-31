@@ -10,11 +10,12 @@ let previous = null;
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach(el => observer.observe(el));
 
-const close = document.querySelector('.close');
+const closes = document.querySelectorAll('.close');
 
-close.addEventListener('click', event => {
-    event.target.parentNode.classList.toggle('open');
-});
+closes.forEach(item => 
+    item.addEventListener('click', 
+    event => event.target.parentNode.classList.toggle('open'))
+);
 
 function openPopup(className) {
     document.querySelector('.' + className).classList.toggle('open');
